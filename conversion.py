@@ -98,7 +98,8 @@ def trad(nb, unite="Dinar", decim="centime"):
     else:
         ch=ch+" "+unite
     if z2>0:
-        ch=ch+tradn(z2)
+#        ch=ch+tradn(z2)
+        ch=ch+" et"+tradn(z2) # ajout de 'et'  cinq dinars et vingt centimes
         if z2>1 or z2<-1:
             if decim!='':
                 ch=ch+" "+decim+'s'
